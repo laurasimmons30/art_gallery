@@ -2,6 +2,10 @@
 
 <%= link_to 'Create New Gallery', new_gallery_path %>
 
-<% @galleries.each do |gallery| %>
-  <%= gallery.title %>
-<% end %>
+<div class="row">
+  <ul class="small-block-grid-3">
+    <% @galleries.each do |gallery| %>
+      <li><%= gallery.title %></li>
+    <% end %>
+  </ul>
+</div>
