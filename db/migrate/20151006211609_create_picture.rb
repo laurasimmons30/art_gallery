@@ -4,6 +4,7 @@ class CreatePicture < ActiveRecord::Migration
       t.string :file, null: false
       t.string :name
       t.integer :artist_id
+      t.integer :gallery_id
 
       t.timestamps
     end
