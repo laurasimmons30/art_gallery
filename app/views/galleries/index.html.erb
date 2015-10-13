@@ -1,0 +1,7 @@
+<h3>Index of All Galleries</h3>
+
+<%= link_to 'Create New Gallery', new_gallery_path %>
+
+<% @galleries.each do |gallery| %>
+  <%= gallery.title %>
+<% end %>
